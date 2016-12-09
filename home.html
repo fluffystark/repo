@@ -4,17 +4,45 @@
 	<title>Demo Bootstrap</title>
 	<link rel='stylesheet' href="css/bootstrap.css">
 	<style>
-		.row{
-			margin-top:20px;
+
+		.container-fluid{
+		background-color:#F4F4F4;
 		}
+		.plain{
+			color:black;
+		}
+		.plain:hover{
+			text-decoration:none;
+		}
+
+		.nav{
+			background-color:#333333;
+			height:55px;
+		}
+
+		.menu-option{
+			margin: 18px 5px	15px 15px;
+			color:#989898;
+		}
+		.menu-option:hover{
+			text-decoration:none;
+			color:#EEEEEE;
+		}
+		.logo{
+			margin: 18.5px 14.5px 14.5px 15px;
+		}
+
 		.header{
-			height:60px;
-			background-color:#F2635F;
+			height:56px;
+			background-color:#333333;
 		}
 
-		.menu{
 
-			background-color:#0093D1;
+		.menu-pic{
+			padding: 5px 5px 0px 5px;
+			color:black;
+			border-bottom:1px solid #E5E5E5;
+			background-color:#FAFAFA;
 		}
 
 		.add{
@@ -23,75 +51,164 @@
 		}
 
 		.gallery{
-			padding-bottom:30px;
-			background-color:#006495;
+			padding: 30px 30px 40px 30px;
 		}
 
 		.footer{
 			height:50px;
-			background-color:gray;
+			border-top:1px solid #E5E5E5;
+			background-color:#FAFAFA;
 		}
 
-		.nav{
-			height:30px;
-			background-color:white;
-			margin-top:10px;
+		.intro{
+			padding: 20px 20px 20px 20px;
+			background-color: #444444;
+			color:#989898;
 		}
 
-		img{
-			width:100%;
-			margin-top:10px;
+		.navbar-form.navbar-right.menu-option{
+			margin: 15px 5px	15px 15px;
 		}
+
+		.thumbnail{
+			border-width:0;
+		}
+
+
+
 	</style>
 </head>
 <body>
+
 	<div class="container-fluid">
-		<div class="row">
-			<div class="header col-lg-4 col-lg-offset-4 col-xs-12">
+		<div class="row text-center">
+			<div class="header col-lg-12 col-xs-12">
+				<div class="row">
+						<a>
+							<img class="logo navbar-text " src="img/logo-dribbble.png">
+						</a>
+						<a class="navbar-text menu-option navbar-left" href="#">
+							<span>Shots</span>
+						</a>
+						<a class="navbar-text menu-option navbar-left" href="#">
+							<span>Designers</span>
+						</a>
+						<a class="navbar-text menu-option navbar-left" href="#">
+							<span>Teams</span>
+						</a>
+						<a class="navbar-text menu-option navbar-left" href="#">
+							<span>Community</span>
+						</a>
+						<a class="navbar-text menu-option navbar-left" href="#">
+							<span>Jobs</span>
+						</a>
+						<a class="navbar-text menu-option navbar-left" href="#">
+							<span class="glyphicon glyphicon-option-horizontal" aria-hidden="true" style="font-size:20px;"></span>
+						</a>
+						<form class="navbar-form navbar-right menu-option">
+							<input type="text" class="form-control input-sm" placeholder="Search">
+						</form>
+						<a class="navbar-text menu-option navbar-right" href="#">
+							<span>Sign in</span>
+						</a>
+						<a class="navbar-text menu-option navbar-right" href="#">
+							<span>Sign up</span>
+						</a>
+					</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="menu col-lg-3 col-xs-12">
-				<div class="row">
-					<div class="nav col-lg-6 col-lg-offset-3 col-xs-1 col-xs-offset-1">
+
+		<div class="row text-center">
+			<div class="col-lg-12 intro">
+				<p class="h4">
+					<span style="color:white;">What are you working on?</span> Dribbble is show and tell for designers.
+					<span>
+						<a class="btn btn-default" href="#" role="button">Learn more</a>
+						<a class="btn btn-primary" href="#" role="button">Sign up</a>
+					</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-lg-12 menu menu-pic">
+				<p>
+					<span>
+						<a class="plain btn btn-link btn-default" href="#" role="button">
+							<span>
+								Popular
+								<span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="font-size:10px;color:grey;"></span>
+							</span>
+						</a>
+						<a class="plain btn btn-link btn-primary" href="#" role="button">
+							<span>
+								Shots
+							<span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="font-size:10px;color:grey;"></span>
+						</span>
+						</a>
+						<a class="plain btn btn-link btn-primary" href="#" role="button">
+							<span>
+								Now
+								<span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="font-size:10px;color:grey;"></span>
+							</span>
+						</a>
+					</span>
+				</p>
+			</div>
+		</div>
+
+
+		<div class="container-fluid main">
+			<div class="row">
+			<div class="gallery col-xs-12">
+				<div class="row text-center display">
+					<div class="col-lg-4 col-xs-6">
+						<div class="thumbnail">
+						<img src="img/sample-1.png">
+						</div>
 					</div>
-					<div class="nav col-lg-6 col-lg-offset-3 col-xs-1 col-xs-offset-1">
+					<div class="col-lg-4 col-xs-6">
+						<div class="thumbnail">
+						<img src="img/sample-1.png">
+						</div>
 					</div>
-					<div class="nav col-lg-6 col-lg-offset-3 col-xs-1 col-xs-offset-1">
+					<div class="col-lg-4 col-xs-6">
+						<div class="thumbnail">
+						<img src="img/sample-1.png">
+						</div>
 					</div>
-					<div class="nav col-lg-6 col-lg-offset-3 col-xs-1 col-xs-offset-1">
-					</div>
-				</div>
-				<div class="row">
 
 				</div>
 			</div>
-			<div class="gallery col-lg-9 col-xs-12">
-				<div class="row">
-					<div class="col-lg-4 col-xs-6">
-						<img src="img/Harambe.jpg">
+		</div>
+		<div class="row">
+		<div class="gallery col-xs-12">
+			<div class="row text-center display">
+				<div class="col-lg-4 col-xs-6">
+					<div class="thumbnail">
+					<img src="img/sample-1.png">
 					</div>
-					<div class="col-lg-4 col-xs-6">
-						<img src="img/Harambe.jpg">
-					</div>
-					<div class="col-lg-4 col-xs-6">
-						<img src="img/Harambe.jpg">
-					</div>
-					<div class="col-lg-4 col-xs-6">
-						<img src="img/Harambe.jpg">
-					</div>
-					<div class="col-lg-4 visible-lg">
-						<img src="img/Harambe.jpg">
-					</div>
-					<div class="col-lg-4 visible-lg">
-						<img src="img/Harambe.jpg">
-					</div>
-
 				</div>
+				<div class="col-lg-4 col-xs-6">
+					<div class="thumbnail">
+					<img src="img/sample-1.png">
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-6">
+					<div class="thumbnail">
+					<img src="img/sample-1.png">
+					</div>
+				</div>
+
 			</div>
 		</div>
+	</div>
+	</div>
+
 		<div class="row">
 			<div class="footer col-lg-12">
+				<div class="row">
+				</div>
 			</div>
 		</div>
 	</div>
